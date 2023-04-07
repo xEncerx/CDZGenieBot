@@ -1,0 +1,10 @@
+CRITICAL|2023-03-27 14:43:39,610|main.py:9|Test [@Encer_Bot] STARTED
+ERROR|2023-03-27 14:43:55,366|base_events.py:1744|Task exception was never retrieved
+future: <Task finished name='Task-73' coro=<aio_create_img() done, defined at C:\Users\encer\OneDrive\Рабочий стол\CDZImage\utils\generate_img.py:109> exception=ValueError("invalid literal for int() with base 10: 'dasd'")>
+Traceback (most recent call last):
+  File "C:\Users\encer\OneDrive\Рабочий стол\CDZImage\utils\generate_img.py", line 110, in aio_create_img
+    img = GenerateImg(test_name=cdz_name, client_name=client_name, time=time, answer=answer)
+  File "C:\Users\encer\OneDrive\Рабочий стол\CDZImage\utils\generate_img.py", line 23, in __init__
+    self.answer = list(map(int, answer))
+ValueError: invalid literal for int() with base 10: 'dasd'
+WARNING|2023-03-27 14:44:49,176|executor.py:329|Goodbye!
